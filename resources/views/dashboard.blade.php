@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('title','about page')
+@section('title','dashboard')
 @section('content')
-<h1></h1>
+  <h1>dashboard page</h1>
 @endsection('content')

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use SebastianBergmann\CodeUnit\FunctionUnit;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+// Route::get("/admin/home",function(){
+//     return view("admin/home");
+// });
+Route::get("/",function(){
+    return view("home");
 });
-Route::get("/about",function(){
-    return("about");
+
+Route::get("services",function(){
+    return view("services");
+});
+Route::get("dashboard",Function(){
+    return view("dashboard");
+});
+Route::get("about",function(){
+    return view('about');
 });
