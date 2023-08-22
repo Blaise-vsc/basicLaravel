@@ -10,14 +10,14 @@
       <script src="https://cdn.tailwindcss.com"></script>
       {{-- font link --}}
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
-      
-    <title>@yield('title')</title>
+      <title>@yield('title')</title>
+      @vite('resources/css/app.scss')
 </head>
 <body class="font-family: 'Roboto', sans-serif;">
     <main class="relative w-full min-h-screen flex items-center justify-end bg-blue-200">
     <div class="w-1/4 min-h-screen bg-gray-900 text-gray-400 py-8 px-8 fixed top-0 left-0">
      <div class="flex items-center justify-center flex-col gap-4">
-        <img src="https://betuablaise.netlify.app/profil.jpg" class="w-32 h-32 object-contain rounded-full border-4 border-gray-700 bg-white" alt="betua blaise">
+        <img src="{{ asset('img-larvl/almy.jpg') }}" class="w-32 h-32 object-contain rounded-full border-4 border-gray-700 bg-white" alt="betua blaise">
         <h2 class="font-bold text-xl">BETUA BLAISE</h2>
         <div class="flex flex-row gap-3 ">
             <i class='bx bxl-linkedin flex items-center justify-center  text-xl text-gray-900 bg-gray-400 rounded-full  w-8 h-8 hover:bg-blue-600 easy-in duration-150'></i>
@@ -28,22 +28,27 @@
         <hr class="w-full ">
     </div>
      <div class="flex flex-col py-8 w-full h-full">
-        <a href="/" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
+        <a href="#home" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
             <i class='bx bxs-home flex items-center text-lg'></i>
             <h1 class="text-lg">home</h1>
         </a>
-        <a href="/about" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
+        <a href="#about" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
             <i class='bx bx-building-house flex items-center text-lg'></i>
             <h1 class="text-lg">about</h1>
         </a>
-        <a href="/services" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
+        <a href="#resume" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
             <i class='bx bxs-contact flex items-center text-lg'></i>
-            <h1 class="text-lg">services</h1>
+            <h1 class="text-lg">resume</h1>
         </a>
-        <a href="/dashboard" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
+        <a href="#skill" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
             <i class='bx bxs-dashboard flex items-center text-lg'></i>
-            <h1 class="text-lg">dashboard</h1>
+            <h1 class="text-lg">skill</h1>
         </a>
+        <a href="#portfolio" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
+            <i class='bx bxs-cable-car flex items-center text-lg'></i>
+            <h1 class="text-lg">portfolio</h1>
+        </a>
+        
      </div>
         
     </div>

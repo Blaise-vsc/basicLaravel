@@ -33,3 +33,6 @@ Route::get("dashboard",Function(){
 Route::get("about",function(){
     return view('about');
 });
+Route::get("portfolio",function(){
+    return view("portfolio");
+});
