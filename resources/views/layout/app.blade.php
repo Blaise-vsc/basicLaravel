@@ -13,9 +13,10 @@
       <title>@yield('title')</title>
       @vite('resources/css/app.scss')
 </head>
-<body class="font-family: 'Roboto', sans-serif;">
+<body class="font-family: 'Roboto', sans-serif; w-[100vw]">
     <main class="relative w-full min-h-screen flex items-center justify-end bg-blue-200">
-    <div class="w-1/4 min-h-screen bg-gray-900 text-gray-400 py-8 px-8 fixed top-0 left-0">
+        {{-- w-1/4 --}}
+    <div class="hidden sm:block sm:w-1/4 min-h-screen bg-gray-900 text-gray-400 py-8 px-8 fixed top-0 left-0">
      <div class="flex items-center justify-center flex-col gap-4">
         <img src="{{ asset('img-larvl/almy.jpg') }}" class="w-32 h-32 object-contain rounded-full border-4 border-gray-700 bg-white" alt="betua blaise">
         <h2 class="font-bold text-xl">BETUA BLAISE</h2>
@@ -27,22 +28,23 @@
         </div>
         <hr class="w-full ">
     </div>
+
      <div class="flex flex-col py-8 w-full h-full">
-        <a href="#home" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
+        <a href="/home" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
             <i class='bx bxs-home flex items-center text-lg'></i>
             <h1 class="text-lg">home</h1>
         </a>
-        <a href="#about" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
+        <a href="about" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
             <i class='bx bx-building-house flex items-center text-lg'></i>
             <h1 class="text-lg">about</h1>
         </a>
-        <a href="#resume" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
+        <a href="component" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
             <i class='bx bxs-contact flex items-center text-lg'></i>
-            <h1 class="text-lg">resume</h1>
+            <h1 class="text-lg">component</h1>
         </a>
-        <a href="#skill" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
+        <a href="service" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
             <i class='bx bxs-dashboard flex items-center text-lg'></i>
-            <h1 class="text-lg">skill</h1>
+            <h1 class="text-lg">services</h1>
         </a>
         <a href="#portfolio" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
             <i class='bx bxs-cable-car flex items-center text-lg'></i>
@@ -51,8 +53,10 @@
         
      </div>
         
+    
     </div>
-        <div class="w-3/4 min-h-screen flex justify-center flex-col bg-fixed bg-cover" style="background-image: url('https://images.unsplash.com/photo-1620570623737-efc0ec4ab486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRlY2hub2xvZ3klMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60')">
+    {{--  --}}
+        <div class="w-[100vw] sm:w-3/4 min-h-screen flex flex-col bg-fixed bg-cover" style="background-image: url('https://images.unsplash.com/photo-1620570623737-efc0ec4ab486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRlY2hub2xvZ3klMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60')">
         @yield('content')
         </div>
     </main>

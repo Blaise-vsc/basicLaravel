@@ -23,16 +23,19 @@ use SebastianBergmann\CodeUnit\FunctionUnit;
 Route::get("/",function(){
     return view("home");
 });
+Route::get("home",function(){
+    return view("home");
+});
 
-Route::get("services",function(){
-    return view("services");
+Route::get("service",function(){
+    return view("service");
 });
-Route::get("dashboard",Function(){
+Route::get("component",Function(){
+    return view("component");
+});
+Route::get("about/{name}",function($name){
+    return view('about',['name'=>$name]);
+});
+Route::get("dashboard",function(){
     return view("dashboard");
-});
-Route::get("about",function(){
-    return view('about');
-});
-Route::get("portfolio",function(){
-    return view("portfolio");
 });

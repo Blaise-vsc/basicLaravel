@@ -1,9 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
 .card-parent {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1rem;
     background-color: #f5f8fd;
-}
-html {
-    scroll-behavior: smooth;
+    @media (max-width: 277px) {
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    }
 }

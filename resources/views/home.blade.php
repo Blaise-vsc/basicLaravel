@@ -34,14 +34,13 @@ $products=[
 ]
 ]
 
-
-
-
 @endphp
 {{-- endphp --}}
-<section id="home" class="home w-full min-h-screen flex items-center justify-center flex-col gap-3 text-white">
-    <h1 class="font-bold text-5xl"> BETUA BLAISE</h1>
-    <P class="text-2xl">I'm a motion and graphic designer <br> font-end developper <br> and still fighting  for the <span class="text-xl font-bold text-gray-300">FULLSTUCK</span> </P>
+<x-dropdown-btn class="text-2xl  sm:hidden hover:bg-gray-200" />
+{{-- menu⬆ --}}
+<section id="home" class="home w-full min-h-[50vh] sm:min-h-screen flex items-center justify-center flex-col gap-3 text-white">
+    <h1 class="font-bold text-2xl sm:text-5xl"> BETUA BLAISE</h1>
+    <P class="text-[120%] sm:text-2xl">I'm a motion and graphic designer <br> font-end developper <br> and still fighting  for the <span class="text-[140%]sm:text-xl font-bold text-gray-300">FULLSTUCK</span> </P>
 </section>
 {{-- section about --}}
 <section id="about" class="w-full min-h-screen  bg-white py-8 px-5 flex flex-col gap-5 justify-center">
@@ -54,23 +53,23 @@ $products=[
 <div class="flex flex-col gap-4 w-full">
     <p class="text-xl">I'm a passionate motion & graphic designer, skilled front-end developer, and aspiring full-stack enthusiast, determined to master the digital realm, also experienced in SEO strategies.</p>
 </div>
-<div class="flex flex-row gap-2 w-full">
-    <div class="w-1/3">
+<div class="flex flex-col sm:flex-row gap-2 w-full">
+    <div class="w-full sm:w-1/3">
     <img class="w-full h-full object-cover" src="{{ asset('img-larvl/almy.jpg') }}" alt="betua blaise profile">
     </div>
 
-    <div class="w-2/3 flex flex-col gap-2">
+    <div class="w-full sm:w-2/3 flex flex-col gap-2">
     <h1 class="text-3xl font-bold text-blue-950 ">UI/UX DEVELOPER & WEB DESIGNER</h1>
     <p class="text-xl">Passionate about crafting seamless,and translating creative visions into captivating web designs.</p>
 
-  <div class="flex flex-row gap-4 w-full">
-    <div class="flex flex-col gap-4 w-1/2 justify-start">
+  <div class="flex flex-col sm:flex-row gap-4 w-full">
+    <div class="flex flex-col gap-[10px] sm:gap-4 w-1/2 justify-start">
 
       <div class="flex items-center text-xl gap-1">
         <i class='bx bx-chevron-right text-blue-300 text-4xl flex items-center justify-center'></i> <span class="font-bold flex items-center justify-center">Birthday: </span> 3/8/1996
       </div>
       <div class="flex items-center text-xl gap-1">
-        <i class='bx bx-chevron-right text-blue-300 text-4xl flex items-center justify-center'></i> <span class="font-bold flex items-center justify-center">Website: </span> betuablaise.netlify.app/
+        <i class='bx bx-chevron-right text-blue-300 text-4xl flex items-center justify-center'></i> <span class="font-bold flex items-center justify-center">Website: <br> </span> betua.com
       </div>
       <div class="flex items-center text-xl gap-1">
         <i class='bx bx-chevron-right text-blue-300 text-4xl flex items-center justify-center'></i> <span class="font-bold flex items-center justify-center">Phone: </span> +2567-809-50-387
@@ -87,7 +86,7 @@ $products=[
             <i class='bx bx-chevron-right text-blue-300 text-4xl flex items-center justify-center'></i> <span class="font-bold flex items-center justify-center">Degre: </span> Graduate
         </div>
           <div class="flex items-center text-xl gap-1">
-            <i class='bx bx-chevron-right text-blue-300 text-4xl flex items-center justify-center'></i> <span class="font-bold flex items-center justify-center">Email: </span> blaisebetua23@gmail.com
+            <i class='bx bx-chevron-right text-blue-300 text-4xl flex items-center justify-center'></i> <span class="font-bold flex items-center justify-center">Email: </span> @gmail.com
         </div>
           <div class="flex items-center text-xl gap-1">
             <i class='bx bx-chevron-right text-blue-300 text-4xl flex items-center justify-center'></i> <span class="font-bold flex items-center justify-center">Design: </span> Available
@@ -112,40 +111,40 @@ $products=[
     <div>
         <p class="text-lg">Diving into a world of creativity and technology: I excel in graphic design, bring life to visuals through motion design, build functional and captivating websites, and optimize online presence with SEO expertise.</p>
     </div>
-    <div class="flex flex-row px-16 gap-6 justify-between mt-6 w-full">
-      <div class="flex flex-col w-1/4">
-       <nav class="flex flex-row items-center justify-center gap-4">
-        <i class='bx bx-happy text-6xl flex items-center justify-center text-blue-500'></i>
-        <h1 class="w-3/4 text-5xl font-bold flex items-center">120</h1>
+    <div class="flex flex-row px-16 gap-[1px] sm:gap-6 justify-center sm:justify-between mt-6 w-full">
+      <div class="flex flex-col w-1/3">
+       <nav class="flex flex-row items-center justify-center gap-1 sm:gap-4 w-full">
+        <i class='bx bx-happy text-6xl hidden sm:flex items-center justify-center text-blue-500'></i>
+        <h1 class="w-3/4 text-2xl sm:text-5xl font-bold flex items-center">120</h1>
        </nav>
-       <nav class="flex flex-row items-center justify-center gap-4">
-        <i class='bx bx-happy text-6xl flex items-center justify-center text-white'></i>
+       <nav class="flex flex-row items-center justify-center gap-1 sm:gap-4 w-full">
+        <i class='bx bx-happy text-6xl hidden sm:flex items-center justify-center text-white'></i>
         <div class="w-3/4 text-2xl flex items- flex flex-col">
          <h2 class="text-xl font-bold">happy clients</h2>    
          <p class="text-xl">ancaju</p>    
         </div>
        </nav>
       </div>
-      <div class="flex flex-col w-1/4">
+      <div class="flex flex-col w-1/3">
        <nav class="flex flex-row items-center justify-center gap-4">
-        <i class='bx bx-briefcase-alt-2 text-6xl flex items-center justify-center text-blue-500'></i>
-        <h1 class="w-3/4 text-5xl font-bold flex items-center">12</h1>
+        <i class='bx bx-briefcase-alt-2 text-6xl hidden sm:flex items-center justify-center text-blue-500'></i>
+        <h1 class="w-3/4 text-2xl sm:text-5xl font-bold flex items-center">12</h1>
        </nav>
        <nav class="flex flex-row items-center justify-center gap-4">
-        <i class='bx bx-happy text-6xl flex items-center justify-center text-white'></i>
+        <i class='bx bx-happy text-6xl hidden sm:flex items-center justify-center text-white'></i>
         <div class="w-3/4 text-2xl flex items- flex flex-col">
          <h2 class="text-xl font-bold">website</h2>    
          <p class="text-xl">ancaju.com</p>    
         </div>
        </nav>
       </div>
-      <div class="flex flex-col w-1/4">
+      <div class="flex flex-col w-1/3">
        <nav class="flex flex-row items-center justify-center gap-4">
-        <i class='bx bx-street-view text-6xl flex items-center justify-center text-blue-500'></i>
-        <h1 class="w-3/4 text-5xl font-bold flex items-center">554</h1>
+        <i class='bx bx-street-view text-6xl hidden sm:flex items-center justify-center text-blue-500'></i>
+        <h1 class="w-3/4 text-2xl sm:text-5xl font-bold flex items-center">554</h1>
        </nav>
        <nav class="flex flex-row items-center justify-center gap-4">
-        <i class='bx bx-briefcase-alt-2 text-6xl flex items-center  text-white justify-center'></i>
+        <i class='bx bx-briefcase-alt-2 text-6xl hidden sm:flex items-center  text-white justify-center'></i>
         <div class="w-3/4 text-2xl flex items- flex flex-col">
          <h2 class="text-xl font-bold">hark-work</h2>    
          <p class="text-xl">focus</p>    
@@ -165,9 +164,9 @@ $products=[
       <p class="text-lg">🎨 Proficient in graphic design, I shape ideas into visuals. 🚀 Motion design brings life to my creations. 💻 Web development is my playground for innovative coding. 📈 SEO expertise ensures online visibility. Join me in crafting impactful digital experiences that merge art and technology seamlessly.</p>
   </div>
   {{-- charts --}}
-  <div class="flex flex-row  gap-4 justify-between w-full py-5 ">
+  <div class="flex flex-col sm:flex-row  gap-4 justify-between w-full py-5 ">
     {{-- left charts --}}
-    <div class="w-1/2 flex flex-col gap-4">
+    <div class="w-full sm:w-1/2 flex flex-col gap-4">
     <nav class="flex flex-col gap-2 w-full">
       <div class="flex flex-row justify-between w-full">
         <h1 class="font-bold text-blue-950">html</h1>
@@ -211,7 +210,7 @@ $products=[
     </nav>
     </div>
     {{-- right chart --}}
-    <div class="w-1/2 flex flex-col gap-4  p">
+    <div class="w-full sm:w-1/2 flex flex-col gap-4  p">
       <nav class="flex flex-col gap-2 w-full">
         <div class="flex flex-row justify-between w-full">
           <h1 class="font-bold text-blue-950">photoshop/adobe-illustator</h1>
@@ -271,9 +270,9 @@ $products=[
       <p class="text-lg">Experienced UI/UX designer, skilled front-end developer, and SEO expert. Proficient in graphic and motion design, creating captivating web experiences. Passionate about merging creativity and technology for impactful results.</p>
   </div>
   {{-- charts --}}
-  <div class="flex flex-row  gap-4 justify-between w-full py-5 ">
+  <div class="flex flex-col sm:flex-row  gap-4 justify-between w-full py-5 ">
     {{-- left charts --}}
-    <div class="flex flex-col w-1/2">
+    <div class="flex flex-col w-ful sm:w-1/2">
       <nav class="w-full flex flex-col gap-2 relative pl-5 pb-8">
         <hr class="bg-blue-950 w-1 h-32  left-0 top-12 absolute">
         <hr class="bg-blue-950 w-1 h-20  left-0 bottom-10 absolute">
@@ -301,7 +300,7 @@ $products=[
       </nav>
     </div>
     {{-- right chart --}}
-    <div class="flex flex-col w-1/2">
+    <div class="flex flex-col w-full sm:w-1/2">
       <nav class="w-full flex flex-col gap-2 relative pl-5 pb-8">
         <hr class="bg-blue-950 w-1 h-32  left-0 top-12 absolute">
         <hr class="bg-blue-950 w-1 h-20  left-0 bottom-10 absolute">
@@ -347,7 +346,7 @@ $products=[
     <nav class="bg-gray-200 rounded-[10px] flex flex-col gap-2 p-[1rem]">
       <h1><span class="font-bold">id:</span> {{ $product['id'] }}</h1>
       <div class="img-parent">
-        <img class="w-[220px] h-[120px] shadow-lg object-cover rounded-[10px]" src="{{ asset($product['image']) }}" alt="">
+        <img class="w-[220px] h-[120px] grayscale-0 shadow-md object-cover rounded-[10px] transition hover:scale-110 tansition easy-in delay-350 hover:shadow-xl" src="{{ asset($product['image']) }}" alt="">
       </div>
       <h2><span class="font-bold">title: </span> {{ $product['title'] }}</h2>
       <p><span class="font-bold">Description:</span> {{ $product['description'] }}</p>
