@@ -13,8 +13,8 @@
       <title>@yield('title')</title>
       @vite('resources/css/app.scss')
 </head>
-<body class="font-family: 'Roboto', sans-serif; w-[100vw]">
-    <main class="relative w-full min-h-screen flex items-center justify-end bg-blue-200">
+<body class="font-family: 'Roboto', sans-serif; w-[100vw] bg-gray-900">
+    <main class="relative w-full min-h-screen flex items-center justify-end bg-gray-900">
         {{-- w-1/4 --}}
     <div class="hidden sm:block sm:w-1/4 min-h-screen bg-gray-900 text-gray-400 py-8 px-8 fixed top-0 left-0">
      <div class="flex items-center justify-center flex-col gap-4">
@@ -28,8 +28,9 @@
         </div>
         <hr class="w-full ">
     </div>
+   
 
-     <div class="flex flex-col py-8 w-full h-full">
+     <div class="flex flex-col py-8 w-full min-h-full">
         <a href="/home" class="flex flex-row gap-3 hover:border-b-2 border-gray-500  hover:text-gray-300 easy-in durection-00 hover:w-full py-2 px-2 align-items" >
             <i class='bx bxs-home flex items-center text-lg'></i>
             <h1 class="text-lg">home</h1>
@@ -52,10 +53,10 @@
         </a>
         
      </div>
-        
+    </div> 
     
-    </div>
-    {{--  --}}
+    
+    
         <div class="w-[100vw] sm:w-3/4 min-h-screen flex flex-col bg-fixed bg-cover" style="background-image: url('https://images.unsplash.com/photo-1620570623737-efc0ec4ab486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRlY2hub2xvZ3klMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60')">
         @yield('content')
         </div>

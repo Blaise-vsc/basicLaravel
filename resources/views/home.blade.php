@@ -238,9 +238,9 @@ $products=[
           <h1 class="font-bold text-blue-950">90</h1>
         </div>
         <div class="w-full h-3 bg-sky-200">
-          <h1 class="w-5/5 h-1/3 bg-sky-500"></h1>
-          <h1 class="w-5/5 h-1/3 bg-yellow-200"></h1>
-          <h1 class="w-5/5 h-1/3 bg-sky-300"></h1>
+          <h1 class="w-[96%] h-1/3 bg-sky-500"></h1>
+          <h1 class="w-[69%] h-1/3 bg-yellow-200"></h1>
+          <h1 class="w-[86%] h-1/3 bg-sky-300"></h1>
         </div>
   
       </nav>
@@ -250,9 +250,9 @@ $products=[
           <h1 class="font-bold text-blue-950">90</h1>
         </div>
         <div class="w-full h-3 bg-sky-200">
-          <h1 class="w-4/5 h-1/3 bg-sky-500"></h1>
-          <h1 class="w-2/5 h-1/3 bg-lime-500"></h1>
-          <h1 class="w-3/5 h-1/3 bg-teal-700"></h1>
+          <h1 class="w-[87%] h-1/3 bg-sky-500"></h1>
+          <h1 class="w-[75%] h-1/3 bg-lime-500"></h1>
+          <h1 class="w-4/5 h-1/3 bg-teal-700"></h1>
         </div>
   
       </nav>
@@ -304,7 +304,7 @@ $products=[
       <nav class="w-full flex flex-col gap-2 relative pl-5 pb-8">
         <hr class="bg-blue-950 w-1 h-32  left-0 top-12 absolute">
         <hr class="bg-blue-950 w-1 h-20  left-0 bottom-10 absolute">
-        <hr class="border-blue-950 w-4 h-4 rounded-full border-2  -left-1 top-2 absolute">
+        
       <h1 class=" text-2xl font-bold text-blue-950">Graduet</h1>
       <p class="text-lg">
         deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.
@@ -316,7 +316,7 @@ $products=[
       {{--  --}}
       <nav class="w-full flex flex-col gap-2 relative pl-5 pb-8">
         <hr class="bg-blue-300 w-1 h-32  left-0 top-12 absolute">
-        <hr class="border-blue-950 w-4 h-4 rounded-full border-2  -left-1 top-2 absolute">
+        
       <h1 class=" text-2xl font-bold text-blue-950">ressources</h1>
       <div class="flex flex-col">
       <p class="text-lg">. pnj-wings</p>

@@ -1,5 +1,8 @@
 @extends('layout.app')
 @section('title','component page')
 @section('content')
-   <h1>component</h1>
+   <div class="w-full h-[100vh] bg-white bg-opacity-7">
+         @livewire('todos')
+   </div>
+
 @endsection

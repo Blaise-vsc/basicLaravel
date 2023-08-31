@@ -23,6 +23,7 @@ use SebastianBergmann\CodeUnit\FunctionUnit;
 Route::get("/",function(){
     return view("home");
 });
+
 Route::get("home",function(){
     return view("home");
 });
@@ -33,9 +34,12 @@ Route::get("service",function(){
 Route::get("component",Function(){
     return view("component");
 });
-Route::get("about/{name}",function($name){
-    return view('about',['name'=>$name]);
+Route::get("about",function(){
+    return view('about');
 });
 Route::get("dashboard",function(){
     return view("dashboard");
 });
+// Route::get("about/{name}",function($name){
+//     return view('about',['name'=>$name]);
+// });
